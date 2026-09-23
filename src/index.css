@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold: #FFD21F;
+    --red: #E21B23;
+    --silver: #C0C0C0;
+    --bg-dark: #0B0B0B;
+    --card-dark: #131313;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD21F;
+}
+
+/* Gold glow and subtle shadows */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(255, 210, 31, 0.2);
+}
+
+.gold-glow-sm {
+  box-shadow: 0 0 12px rgba(255, 210, 31, 0.15);
+}
+
+.red-glow {
+  box-shadow: 0 0 25px rgba(226, 27, 35, 0.35);
+}
+
+.silver-border {
+  border-color: rgba(192, 192, 192, 0.16);
+}
+
+/* Subtle pattern overlay */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 210, 31, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
